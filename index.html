@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Attendance</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Welcome to class!</h1>
+            <p>Class Attendance</p>
+            <span>*Required</span>
+        </header>
+        
+        <form id="attend">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter Your Name"required>
+            </div>
+
+            <div class="form-group">
+                <label id="emai-label" for="email">E-mail</label>
+                <input type="text" name="emal" id="email" class="form-control" placeholder="Enter Your E-mail">
+
+
+            </div>
+
+            <div class="form-group">
+                <p>Campus</p>
+                <select name="role" id="dropdown" class="form-control" required>
+                    <option disabled selected value="">Choose</option>
+                    <option value="Yaba">Yaba</option>
+                    <option value="Ikoyi">Ikoyi</option>
+                    <option value="Surulere">Surulere</option>
+                    <option value="Igando">Igando</option>
+                    <option value="V.I">V.I</option>
+                    <option value="Ajah">Ajah</option>
+
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Track*</p>
+                <select name="role" id="dropdown" class="form-control" required>
+                    <option disabled selected value="">Choose</option>
+                    <option value="Weekday">Weekday</option>
+                    <option value="Weekend">Weekend</option>
+                    
+
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Course*</p>
+                <select name="role" id="dropdown" class="form-control" required>
+                    <option disabled selected value="">Choose</option>
+                    <option value="Product Design">Product Design</option>
+                    <option value="Frontend">Frontend</option>
+                    <option value="Bankend">Bankend</option>
+                    <option value="Data Science">Data Science</option>
+                    <option value="WordPress">WordPress</option>
+                    <option value="Certified Ethical Hacking">Certified Ethical Hacking</option>
+
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Class Code*</p>
+                <select name="role" id="dropdown" class="form-control" required>
+                    <option disabled selected value="">Choose</option>
+                    <option value="#5B2">#5B2</option>
+                    <option value="#5B3">#5B3</option>
+                    <option value="#5B4">#5B4</option>
+                    
+
+                </select>
+            </div>
+
+            <button>Submit</button>
+            
+
+        </form>
+
+
+       
+    </div>
+<table id="attend" class="table">
+    <tr>
+        <th>Name</th>
+        <th>E-mail</th>
+        <th>Campus</th>
+        <th>Track</th>
+        <th>Course</th>
+        <th>Class Code</th>
+    </tr>
+
+    <tbody>
+
+    </tbody>
+
+</table>
+   
+    <script src="./app.js"></script>
+</body>
+</html>
